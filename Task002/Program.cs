@@ -5,20 +5,20 @@ int[] array = GetArray(4, 1, 9);
 
 int[] GetArray(int size, int min, int max)
 {
-  int[] result = new int[size];
+    int[] result = new int[size];
 
-  for (int i = 0; i < size; i++)
-  {
-    result[i] = new Random().Next(min, max + 1);
-  }
+    for (int i = 0; i < size; i++)
+    {
+        result[i] = new Random().Next(min, max + 1);
+    }
     Console.WriteLine("Массив: {0}{1}{2}", "[", String.Join(", ", result), "]");
-  return result;
+    return result;
 }
 
 int SumOfOddNumbers(int[] arr)
 {
     int sum = 0;
-    for (int i = 1; i < arr.Length; i+=2)
+    for (int i = 1; i < arr.Length; i += 2)
     {
         sum += arr[i];
     }
